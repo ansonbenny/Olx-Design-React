@@ -1,0 +1,36 @@
+.scrollUpDiv {
+    position: fixed;
+    padding-top: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.scrollUpbtn {
+    color: #002f34;
+    height: 3em;
+    width: 12em;
+    background: white;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition-timing-function: linear;
+}
+
+.scrollUpbtn:hover {
+    cursor: pointer;
+}
+
+.scrollUpbtn:focus{
+    background: #002f34cb;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .scrollUpDiv {
+        display: none;
+    }
+}

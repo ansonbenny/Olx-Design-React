@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  overflow-y: scroll;
+  font-family: 'Roboto',Arial,Helvetica,sans-serif;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.aTagUnderLineRm{
+  text-decoration: none;
+}
+
+.MainCOLOR{
+  color: #002f34;
+}
+
+.fontNormal{
+  font-weight: normal;
+}
+
+.fontSmall-14{
+  font-size: 14px;
+}
+
+.colorGrey{
+  color: gray;
+}
+
+.sellMenu {
+  position: relative;
+  cursor: pointer;
+}
+
+.sellMenu .all {
+  fill: white;
+}
+
+.sellMenu .top {
+  fill: #23e5db;
+}
+
+.sellMenu .left {
+  fill: #ffce32;
+}
+
+.sellMenu .right {
+  fill: #3a77ff;
+}
+
+.sellMenu .sellMenuContent {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #002f34;
+}
+
+/* .sellMenu .sellMenuContent svg {
+  align-items: center;
+} */
+.sellMenu .sellMenuContent span {
+  margin-left: 5px;
+}

@@ -1,0 +1,13 @@
+.mobSellBtnFixed {
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .mobSellBtnFixed {
+        display: block;
+        position: fixed;
+        bottom: 3em;
+        width: 100%;
+        background: transparent;
+    }
+}

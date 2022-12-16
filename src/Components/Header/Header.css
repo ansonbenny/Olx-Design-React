@@ -1,0 +1,294 @@
+.Header {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+}
+
+.headerBgWhite {
+    border-top: 4px solid white;
+    padding-top: 4px;
+}
+
+.headerDesk {
+    padding-top: 6px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: whitesmoke;
+    color: #002f34;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 6px -6px;
+}
+
+.headerDesk .headerGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    position: relative;
+}
+
+.headLogo {
+    padding-top: 3px;
+}
+
+.locationDiv {
+    padding-left: 1em;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+
+.locIcon {
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.locInDiv {
+    padding-right: 15px;
+    display: inline-flex;
+}
+
+.locaArrow {
+    padding-top: 13px;
+    margin-left: -2em;
+}
+
+.locaInput {
+    border: 2px solid #002f34;
+    border-radius: 3px;
+    width: 200px;
+    height: 45px;
+    font-size: medium;
+    outline: none;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.locaInput:focus {
+    border: 2px solid #23e5db;
+}
+
+.searchDiv {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    height: 45px;
+}
+
+.searchIcon {
+    border: 2px solid #002f34;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: none;
+    background-color: #002f34;
+    margin-left: -5px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+}
+
+.searchIconBtn {
+    padding-top: 9px;
+    border: none;
+    background: transparent;
+}
+
+.searchIconBtn:hover {
+    cursor: pointer;
+}
+
+.searchInDiv {
+    width: 480px;
+    background-color: white;
+}
+
+.searchInput {
+    border: 2px solid #002f34;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    width: 100%;
+    height: 45px;
+    padding-left: 8px;
+    font-size: medium;
+    outline: none;
+    color: #002f34;
+}
+
+.searchInput:focus {
+    border-color: #23e5db;
+}
+
+.accDivHeader {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.headLangu {
+    padding-left: 25px;
+    padding-top: 18px;
+}
+
+.headLangu h4 {
+    font-size: 14px;
+}
+
+.headLogin {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+}
+
+.headLogin:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.langFlex {
+    display: inline-flex;
+}
+
+.langArrow {
+    margin-top: -4px;
+    padding-left: 7px;
+}
+
+.headerSell {
+    padding-top: 3px;
+    padding-left: 3em;
+}
+
+.headerMob{
+    display: none;
+}
+
+.SpecificHeadMob{
+    display: none;
+}
+
+.topPaddDesk{
+    display: block;
+    padding-top: 4.4em;
+}
+
+.topPaddMob{
+    display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .locaInput {
+        width: 150px;
+    }
+
+    .searchInDiv {
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width: 1115px) {
+
+    .locaInput {
+        width: 130px;
+    }
+
+    .searchInDiv {
+        width: auto;
+        max-width: 350px;
+    }
+
+    .searchIcon {
+        margin-left: -10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .headerDesk {
+        display: none;
+    }
+
+    .headerBgWhite {
+        display: none;
+    }
+
+    .topPaddDesk{
+        display: none;
+    }
+
+    .topPaddMob{
+        display: block;
+        padding-top: 6.2em;
+    }
+
+    .headerMob{
+        display: block;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .headerMob .mainHeadMob{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .headerMob .mobLocHead{
+        padding-top: 15px;
+        font-weight: bold;
+        font-size: medium;
+        color: #002f34;
+        float: right;
+    }
+
+    .headerMob .mobLocHeadDiv{
+        float: right;
+    }
+
+    .headerMob .headerMobMenubar{
+        padding-top: 15px;
+        padding-right: 15px;
+    }
+
+    .headerMob .headerMobMenubar button{
+        background: none;
+        border: none;
+    }
+
+    .headerMob .headerMobMenubar i{
+        color: #002f34;
+    }
+
+    .headerMob .mobSearchHead button {
+        background: white;
+        border: 2px solid #002f34;
+        border-radius: 5px;
+        width: 100%;
+        height: 40px;
+        text-align: left;
+        padding-left: 15px;
+        font-size: medium;
+        color: rgba(14, 4, 5, .2);
+        box-shadow: none;
+    }
+
+    .headerMob .mobSearchHead button span {
+        color: #002f34;
+    }
+
+    .headerMob .mobSearchHead {
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 8px;
+    }
+
+    .SpecificHeadMob{
+        display: block;
+        background: whitesmoke;
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
+
+    .SpecificHeadMob .backBtn{
+        padding-right: 25px;
+        padding-left: 15px;
+    }
+}

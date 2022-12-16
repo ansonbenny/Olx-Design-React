@@ -1,0 +1,1503 @@
+/*
+
+Responsive Post
+
+*/
+
+.postsHome .containerPostBasedSearch {
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.postsHome {
+    padding-top: 3em;
+    display: inline-block;
+    width: 100%;
+}
+
+.postsHome .PostBasedSearchBorder {
+    border-radius: 5px;
+    background: #ebeeef;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+.postsHome .PostBasedSearchBorder h2 {
+    font-weight: normal;
+    color: #002f34;
+}
+
+.PostBasedScrlRight {
+    position: absolute;
+    margin-top: 8em;
+    right: 0;
+    margin-right: 70px;
+    height: 50px;
+}
+
+.PostBasedScrlLeft {
+    position: absolute;
+    margin-top: 8em;
+    left: 0;
+    margin-left: 70px;
+    height: 50px;
+}
+
+.PostBasedScrlLeft button {
+    rotate: 90deg;
+    border: none;
+    width: 50px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.PostBasedScrlRight button {
+    rotate: -90deg;
+    border: none;
+    width: 50px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.viewMoreSeBased {
+    color: #002f34;
+    border-bottom: 2px solid #002f34;
+    float: right;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.viewMoreSeBased:hover {
+    cursor: pointer;
+    color: #002f34;
+    border: none;
+    float: right;
+    text-decoration: none;
+}
+
+.PostBasedSearcFlex {
+    padding-top: 20px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.PostBasedSearcFlex div {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+}
+
+.card {
+    border: 1px solid rgba(14, 4, 5, .2);
+    border-radius: 5px;
+    max-width: 17.8em;
+    width: auto;
+    padding: 10px;
+    background: white;
+    margin-right: 15px;
+    margin-top: 15px;
+    height: 17em;
+}
+
+.cardSubText {
+    color: gray;
+    font-weight: normal;
+}
+
+.cardSubTextH4 {
+    color: gray;
+    font-weight: normal;
+    font-size: medium;
+}
+
+.cardAmt{
+    color: #002f34;
+}
+
+.cardpadSe {
+    padding-right: 13.9px;
+}
+
+.cardpadSe .cardSe {
+    border: 1px solid rgba(14, 4, 5, .2);
+    border-radius: 5px;
+    max-width: 18.5em;
+    width: auto;
+    padding: 10px;
+    background: white;
+    height: 17em;
+    display: inline-block;
+}
+
+.cardImgDiv {
+    text-align: center;
+    height: 11em;
+    width: 16.6em;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImgDiv img {
+    width: auto;
+    max-width: 16.4em;
+    max-height: 10em;
+
+}
+
+.containerPostRecome {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.PostBasedRec {
+    display: grid;
+    float: left;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-flow: row;
+}
+
+.recoTitle {
+    color: #002f34;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.floatRight {
+    margin-left: 15em;
+}
+
+.cardSe h5 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
+
+.card h5 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto auto;
+        grid-auto-flow: row;
+    }
+
+    .card {
+        width: 15.5em;
+    }
+
+    .floatRight {
+        margin-left: 14.1em;
+    }
+
+    .cardImgDiv {
+        text-align: center;
+        height: 11em;
+        width: 15em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 14em;
+        max-height: 10em;
+
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-auto-flow: row;
+    }
+
+    .card {
+        width: 16em;
+    }
+
+    .floatRight {
+        margin-left: 13.1em;
+    }
+
+    .cardImgDiv {
+        text-align: center;
+        height: 11em;
+        width: 14em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 14em;
+        max-height: 10em;
+
+    }
+}
+
+@media only screen and (max-width: 1599) {
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+
+    .floatRight {
+        margin-left: 14em;
+    }
+
+    .cardSe {
+        max-width: 15.5em;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 15.5em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 12em;
+    }
+
+    .cardImgDiv {
+        width: 13em;
+        text-align: center;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 18em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv {
+        width: 17em;
+        text-align: center;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 17em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 18em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 16em;
+    }
+
+    .cardImgDiv {
+        width: 16em;
+        text-align: center;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 18em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 15em;
+    }
+
+    .cardImgDiv {
+        width: 15em;
+        text-align: center;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 18em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 14em;
+    }
+
+    .cardImgDiv {
+        width: 14em;
+        text-align: center;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 1165px) {
+    .cardSe {
+        max-width: 14.5em;
+    }
+
+    .cardSe h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 190px;
+    }
+
+    .floatRight {
+        margin-left: 13em;
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 14.5em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv {
+        width: 14em;
+        text-align: center;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 12em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 1115px) {
+    .cardSe {
+        max-width: 15em;
+    }
+
+    .cardSe h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 190px;
+    }
+
+    .floatRight {
+        margin-left: 11.5em;
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 15em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv {
+        width: 14.2em;
+        text-align: center;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 9.5em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 1101px) {
+    .cardSe {
+        max-width: 14em;
+    }
+
+    .cardSe h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 190px;
+    }
+
+    .floatRight {
+        margin-left: 12.5em;
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 14em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv {
+        width: 13em;
+        text-align: center;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 12em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 1086px) {
+    .cardSe {
+        max-width: 14em;
+        max-height: 14em;
+    }
+
+    .cardSe h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 190px;
+    }
+
+    .floatRight {
+        margin-left: 11.5em;
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 14em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+        height: 14em;
+    }
+
+    .cardImgDiv {
+        width: 13.5em;
+        text-align: center;
+        height: 8em;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 9.5em;
+        max-height: 7.5em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .cardSe {
+        max-width: 13.5em;
+    }
+
+    .cardSe h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 190px;
+    }
+
+    .floatRight {
+        margin-left: 11.5em;
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 13.5em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv {
+        width: 13.5em;
+        text-align: center;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 9.5em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 1036px) {
+    .cardSe {
+        max-width: 13em;
+        max-height: 14em;
+    }
+
+    .cardSe h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 190px;
+    }
+
+    .floatRight {
+        margin-left: 11.5em;
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 13em;
+        width: auto;
+        height: 14em;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv {
+        width: 11em;
+        text-align: center;
+        height: 8em;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 9.5em;
+        max-height: 8em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 1005px) {
+    .cardSe {
+        max-width: 12.5em;
+        max-height: 14em;
+    }
+
+    .cardSe h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 190px;
+    }
+
+    .floatRight {
+        margin-left: 11em;
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 12.5em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+        height: 14em;
+    }
+
+    .cardImgDiv {
+        width: 9em;
+        text-align: center;
+        height: 8em;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 7em;
+        max-height: 6em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+    .cardSe {
+        max-width: 12em;
+    }
+
+    .floatRight {
+        margin-left: 10em;
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 12em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv {
+        width: 11em;
+        text-align: center;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 10em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 955px) {
+
+    .cardSe {
+        max-width: 14em;
+    }
+
+    .cardSe h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 175px;
+    }
+
+    .floatRight {
+        margin-left: 9.5em;
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 12em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv {
+        width: 11em;
+        text-align: center;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 10em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+
+    .cardSe {
+        max-width: 11.5em;
+    }
+
+    .cardSe h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 170px;
+    }
+
+    .floatRight {
+        margin-left: 9em;
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 11.5em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv {
+        width: 10.5em;
+        text-align: center;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 9.5em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 911px) {
+
+    .cardSe {
+        max-width: 11.5em;
+    }
+
+    .cardSe h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 160px;
+    }
+
+    .card h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 160px;
+    }
+
+    .floatRight {
+        margin-left: 9em;
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 11em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv {
+        width: 10.5em;
+        text-align: center;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 9.5em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+
+    .cardSe {
+        max-width: 10em;
+    }
+
+    .cardSe h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 140px;
+    }
+
+    .card h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 140px;
+    }
+
+    .floatRight {
+        margin-left: 8em;
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 10em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv {
+        width: 8em;
+        text-align: center;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 8em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 785px) {
+
+    .cardSe {
+        max-width: 9em;
+    }
+
+    .cardSe h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 130px;
+    }
+
+    .card h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 130px;
+    }
+
+    .floatRight {
+        margin-left: 7em;
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 9em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv {
+        width: 8em;
+        text-align: center;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 8em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 733px) {
+
+    .cardSe {
+        max-width: 15em;
+    }
+
+    .cardSe h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 140px;
+    }
+
+    .card h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 140px;
+    }
+
+    .floatRight {
+        margin-left: 10em;
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 15em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv {
+        width: 8em;
+        text-align: center;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 8em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 695px) {
+
+    .cardSe {
+        max-width: 10em;
+    }
+
+    .cardSe h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 130px;
+    }
+
+    .card h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 130px;
+    }
+
+    .floatRight {
+        margin-left: 9em;
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 10em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv {
+        width: 8em;
+        text-align: center;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 8em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+
+    .cardSe {
+        max-width: 10em;
+    }
+
+    .cardSe h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 130px;
+    }
+
+    .card h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 130px;
+    }
+
+    .floatRight {
+        margin-left: 8em;
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .containerPostRecome {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card {
+        border: 1px solid rgba(14, 4, 5, .2);
+        border-radius: 5px;
+        max-width: 10em;
+        width: auto;
+        padding: 10px;
+        background: white;
+        margin: 5px;
+    }
+
+    .cardImgDiv {
+        width: 8em;
+        text-align: center;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 8em;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: left;
+        grid-template-columns: auto auto auto;
+        grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .cardpadSe {
+        padding-right: 12px;
+    }
+
+    .cardSe h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 140px;
+    }
+
+    .card h5 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 150px;
+    }
+
+    .floatRight {
+        margin-left: 7em;
+    }
+
+    .cardImgDiv img {
+        width: auto;
+        max-width: 8.3em;
+    }
+
+    .cardImgDiv {
+        text-align: center;
+        width: 8.3em;
+        height: 7em;
+    }
+
+    .card {
+        width: 80%;
+        height: 12em;
+    }
+
+    .postsHome {
+        padding-top: 0;
+    }
+
+    .postsHome .PostBasedSearchBorder h2 {
+        font-weight: normal;
+        color: #002f34;
+        font-size: medium;
+    }
+
+    .containerPostRecome {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .PostBasedRec {
+        display: grid;
+        float: none;
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    }
+
+    .PostBasedSearcFlex {
+        display: grid;
+        float: none;
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    }
+
+    .postsHome .containerPostBasedSearch {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .postsHome .PostBasedSearchBorder {
+        border-radius: 0px;
+        background: #ebeeef;
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    }
+
+    .PostBasedScrlLeft {
+        display: none;
+    }
+
+    .PostBasedScrlRight {
+        display: none;
+    }
+
+    .PostBasedSearcFlex {
+        overflow-x: scroll;
+    }
+
+    .recoTitle {
+        font-size: medium;
+        margin-bottom: 10px;
+    }
+
+    .cardpadSe .cardSe {
+        height: 12em;
+        width: 8.8em;
+    }
+}
+
+.pad-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.loadBtnDiv {
+    padding-top: 2em;
+    text-align: center;
+}
+
+.loadBtnDiv button{
+    width: 7em;
+    height: 3.3em;
+    font-size: 15.5px;
+    color: #002f34;
+    font-weight: bold;
+    border: 2px solid #002f34;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.loadBtnDiv button:hover{
+    border: 5px solid #002f34;
+}

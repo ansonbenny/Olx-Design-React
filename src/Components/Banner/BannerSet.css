@@ -1,0 +1,136 @@
+.bannerhome {
+    width: 100%;
+    height: auto;
+}
+
+.deskcategorys .categoryFlex {
+    display: inline-flex;
+    color: #002f34;
+}
+
+.shadowCate {
+    padding-top: 2px;
+    margin-bottom: 5px;
+    border-top: 1px solid white;
+    background-image: linear-gradient(#ebe8e8, white);
+}
+
+.deskcategorys {
+    width: auto;
+    position: relative;
+    background: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 6px;
+    overflow: hidden;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 6px -6px;
+}
+
+.deskcategorys .ArrowCate {
+    margin-top: -4px;
+    padding-left: 5px;
+}
+
+.deskcategorys .maincategory {
+    display: inline-flex;
+}
+
+.deskcategorys .maincategory h4 {
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.deskcategorys .liteCategiorys {
+    display: inline-flex;
+    padding-left: 20px;
+}
+
+.deskcategorys .liteCategiorys h5 {
+    padding-left: 10px;
+    font-weight: lighter;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.MobileCategoryBanner {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .shadowCate {
+        display: none;
+    }
+
+    .deskcategorys {
+        display: none;
+    }
+
+    .MobileCategoryBanner {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        display: block;
+    }
+
+    .MblCateBnrHeadLft {
+        width: 50%;
+        padding-left: 15px;
+    }
+
+    .MblCateBnrHeadLft h5 {
+        font-size: medium;
+        font-weight: lighter;
+    }
+
+    .MblCateBnrHeadRgt {
+        width: 50%;
+        padding-right: 15px;
+        text-align: right;
+    }
+
+    .seeAllMobCate {
+        color: #002f34;
+        border-bottom: 2px solid #002f34;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .seeAllMobCate:hover {
+        cursor: pointer;
+        color: #002f34;
+        border: none;
+        float: right;
+        text-decoration: none;
+    }
+
+    .MobileCategoryBanner .CategoryCardFlexMob {
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    .MobileCategoryBanner .CategoryCardMob {
+        padding-top: 16px;
+        width: 6.5em;
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+
+    .MobileCategoryBanner .CateCardMobImgDiv {
+        width: 6.5em;
+        height: 4em;
+        text-align: center
+    }
+
+    .MobileCategoryBanner .CategoryCardMob img {
+        max-width: 3em;
+    }
+
+    .MobileCategoryBanner .CategoryCardMob h5 {
+        font-weight: lighter;
+        text-transform: uppercase;
+    }
+
+}

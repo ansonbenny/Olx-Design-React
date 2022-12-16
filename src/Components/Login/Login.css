@@ -1,0 +1,131 @@
+.LoginMainDiv{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 100000;
+}
+
+.LoginMainDiv .LoginGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33.333333333%, 1fr));
+    width: 100%;
+    height: auto;
+}
+
+.LoginMainDiv .LoginGrid .gridItemMain {
+    width: auto;
+    text-align: center;
+    margin: 2em;
+    border: 2px solid white;
+    background: white;
+    height: 570px;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.rowslogin{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(25%, 1fr));
+}
+
+.LoginMainDiv .LoginGrid .lgnCntntBottum{
+    position: absolute;
+    bottom: 2em;
+    left: 37%;
+    right: 37%;
+}
+
+@media only screen and (max-width: 959px){
+    .LoginMainDiv .LoginGrid{
+        display: block;
+        grid-template-columns: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .LoginMainDiv .LoginGrid .gridItemMain {
+        display: block;
+        width: auto;
+        text-align: center;
+        margin: 0px;
+        border: none;
+        background: white;
+        height: 100%;
+        border-radius: 0;
+        padding: 1em;
+        margin-top: -1.5em;
+    }
+
+    .LoginMainDiv .LoginGrid .lgnCntntBottum{
+        position: absolute;
+        bottom: 2em;
+        right: auto;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.LoginMainDiv .LoginGrid .loginAd{
+    font-size: medium;
+    padding-top: 10px;
+    font-weight: normal;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #002f34;
+    padding-bottom: 3em;
+}
+
+.LoginMainDiv .LoginGrid .loginX{
+    font-weight: normal;
+    float: right;
+    color: #002f34;
+    cursor: pointer;
+}
+
+.LoginMainDiv .LoginGrid .continueWithLogn{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 10px;
+    background: white;
+    border: 2px solid #002f34;
+    color: #002f34;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.LoginMainDiv .LoginGrid .continueWithLogn:hover{
+    border: 5px solid #002f34;
+    padding-left: 7px;
+}
+
+.LoginMainDiv .LoginGrid .loginOR{
+    font-weight: lighter;
+    padding-top: 10px;
+    padding-bottom: 1em;
+    color: #002f34;
+    font-size: 14px;
+}
+
+.LoginMainDiv .LoginGrid .loginWithEml{
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.LoginMainDiv .LoginGrid .loginWithEml:hover {
+    cursor: pointer;
+}
+
+.LoginMainDiv .LoginGrid .lgnCntntBottumPadd {
+    padding-bottom: 5px;
+}
