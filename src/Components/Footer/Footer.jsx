@@ -8,7 +8,7 @@ function Footer(props) {
   return (
     <div>
       <div className={props.homeFooter ? 'footerHome' : 'footer'}>
-        <div className='footerGrid'>
+        <div className='footerGrid' style={props.copyOnly && {display: 'none'}}>
           <div className='footerItems'>
             <h6>POPULAR LOCATIONS</h6>
             <ul>

@@ -164,6 +164,19 @@
     display: none;
 }
 
+.SpecificHeadDesk{
+    display: block;
+    background: whitesmoke;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.SpecificHeadDesk .backBtn{
+    padding-right: 25px;
+    padding-left: 15px;
+}
+
 .topPaddDesk{
     display: block;
     padding-top: 4.4em;
@@ -285,10 +298,15 @@
         background: whitesmoke;
         padding-top: 23px;
         padding-bottom: 23px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
 
     .SpecificHeadMob .backBtn{
         padding-right: 25px;
         padding-left: 15px;
+    }
+
+    .SpecificHeadDesk{
+        display: none;
     }
 }

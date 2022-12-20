@@ -1,0 +1,59 @@
+.SellItemPage .sellCard{
+    margin-top: 20px;
+    border: 1px solid rgba(14,4,5,.2);
+    border-radius: 3px;
+    margin-left: 13em;
+    margin-right: 13em;
+}
+
+.SellItemPage .sellCard .ChangeBtn{
+    color: #002f34;
+    font-size: 14px;
+    border-bottom: 2px solid #002f34;
+}
+
+.SellItemPage .sellCard .ChangeBtn:hover{
+    border: none;
+    cursor: pointer;
+}
+
+.SpecificHeadDesk .dskSllHedTtle{
+    visibility: hidden;
+    font-weight: normal;
+}
+
+.SellItemPage .titleH4Sell {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1080px) {
+    .SellItemPage .sellCard{
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .SellItemPage .sellCard{
+        margin-left: 5em;
+        margin-right: 5em;
+        margin-top: 1px;
+    }
+
+    .SpecificHeadDesk .dskSllHedTtle{
+        visibility: visible;
+    }
+
+    .SellItemPage .titleH4Sell {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .SellItemPage .sellCard{
+        margin-left: 0px;
+        margin-right: 0px;
+        border: none;
+    }
+}
+

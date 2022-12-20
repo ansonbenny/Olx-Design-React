@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import Error from './Pages/Error';
 import MyAds from './Pages/MyAds';
 import Chats from './Pages/Chats';
+import Sell from './Pages/Sell';
 
 function App() {
   const [showScrlUp, setScrlUp] = useState(false)
@@ -30,6 +31,7 @@ function App() {
           <Route exact path='/' element={<Home />} />
           <Route path='/myads' element={<MyAds />} />
           <Route path='/chats' element={<Chats/>} />
+          <Route path='/post/attributes' element={<Sell/>} />
           <Route path='*' element={<Error />} />
         </Routes>
       </ContentContronl.Provider>
