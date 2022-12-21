@@ -1,23 +1,23 @@
-.SellItemPage .sellCard{
+.SellItemPage .sellCard {
     margin-top: 20px;
-    border: 1px solid rgba(14,4,5,.2);
+    border: 1px solid rgba(14, 4, 5, .2);
     border-radius: 3px;
     margin-left: 13em;
     margin-right: 13em;
 }
 
-.SellItemPage .sellCard .ChangeBtn{
+.SellItemPage .sellCard .ChangeBtn {
     color: #002f34;
     font-size: 14px;
     border-bottom: 2px solid #002f34;
 }
 
-.SellItemPage .sellCard .ChangeBtn:hover{
+.SellItemPage .sellCard .ChangeBtn:hover {
     border: none;
     cursor: pointer;
 }
 
-.SpecificHeadDesk .dskSllHedTtle{
+.SpecificHeadDesk .dskSllHedTtle {
     visibility: hidden;
     font-weight: normal;
 }
@@ -26,21 +26,87 @@
     margin-top: 20px;
 }
 
+.SellItemPage .sellCard .BrandInput {
+    color: #002f34;
+    box-sizing: border-box;
+    border: 1px solid #002f34;
+    background: transparent;
+    outline: none;
+    height: 45px;
+    border-radius: 3px;
+    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.SellItemPage .sellCard .BrandInput:focus {
+    border: 3px solid aqua;
+}
+
+.SellItemPage .sellCard .InputDivs {
+    width: 400px;
+}
+
+.SellItemPage .sellCard .inputSell {
+    color: #002f34;
+    box-sizing: border-box;
+    border: 1px solid #002f34;
+    background: transparent;
+    outline: none;
+    height: 45px;
+    border-radius: 3px;
+    width: 400px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.SellItemPage .sellCard .inputSell:focus {
+    border: 3px solid aqua;
+}
+
+.SellItemPage .sellCard .GridtwoMsg {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.SellItemPage .sellCard .imgSltGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    max-width: 450px;
+}
+
+.SellItemPage .sellCard .imgSltCard{
+    width: 100px;
+    border: 2px solid #002f34;
+    text-align: center;
+    height: 80px;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
 @media only screen and (max-width: 1080px) {
-    .SellItemPage .sellCard{
+    .SellItemPage .sellCard {
         margin-left: 10em;
         margin-right: 10em;
+    }
+
+    .SellItemPage .sellCard .imgSltGrid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        max-width: 350px;
     }
 }
 
 @media only screen and (max-width: 1023px) {
-    .SellItemPage .sellCard{
+    .SellItemPage .sellCard {
         margin-left: 5em;
         margin-right: 5em;
         margin-top: 1px;
     }
 
-    .SpecificHeadDesk .dskSllHedTtle{
+    .SpecificHeadDesk .dskSllHedTtle {
         visibility: visible;
     }
 
@@ -50,10 +116,22 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .SellItemPage .sellCard{
+    .SellItemPage .sellCard {
         margin-left: 0px;
         margin-right: 0px;
         border: none;
     }
-}
 
+    .SellItemPage .sellCard .inputSell {
+        width: 100%;
+    }
+
+    .SellItemPage .sellCard .BrandInput {
+        width: 100%;
+    }
+
+    .SellItemPage .sellCard .InputDivs {
+        width: 100%;
+    }
+
+}
