@@ -89,14 +89,14 @@ function SellComponent() {
                                         if (key === 0) {
                                             return (
                                                 <div key={key} className='imgSltCard'>
-                                                    <h1 style={{ color: '#002f34' }}><i class="fa-solid fa-camera"></i></h1>
+                                                    <h1 style={{ color: '#002f34' }}><i className="fa-solid fa-camera"></i></h1>
                                                     <h5 style={{ color: '#002f34', fontWeight: 'normal' }}>Add Photo</h5>
                                                 </div>
                                             )
                                         } else {
                                             return (
                                                 <div key={key} className='imgSltCard' style={{ borderColor: '#9dadb6', paddingTop: '30px', height: '70px' }}>
-                                                    <h1 style={{ color: '#9dadb6' }}><i class="fa-solid fa-camera"></i></h1>
+                                                    <h1 style={{ color: '#9dadb6' }}><i className="fa-solid fa-camera"></i></h1>
                                                 </div>
                                             )
                                         }
@@ -109,12 +109,36 @@ function SellComponent() {
 
                         <div style={{ padding: '25px', borderBottom: '1px solid rgba(14,4,5,.2)' }}>
                             <h3 className='MainCOLOR'>CONFIRM YOUR LOCATION</h3>
+                            <div style={{ marginTop: '20px' }} className='InputDivs'>
+
+                                <div style={{ display: 'grid', gridTemplateColumns: '50% 50%', textAlign: 'center', marginBottom: '20px', cursor: 'pointer' }}>
+                                    <div style={{ borderBottom: '5px solid #002f34' }}>
+                                        <h4 className='MainCOLOR' style={{ fontSize: '14px' }}>LIST</h4>
+                                    </div>
+                                    <div style={{ borderBottom: '1px solid #9dadb6' }}>
+                                        <h4 className='MainCOLOR' style={{ fontSize: '14px', fontWeight: 'normal' }}>CURRENT LOCATION</h4>
+                                    </div>
+                                </div>
+
+                                <label>State *</label>
+                                <br />
+                                <select className='BrandInput' name="" id="">
+                                    <option value=""></option>
+                                    <option value="">Apple</option>
+                                </select>
+                            </div>
+
+                            <p style={{ fontSize: 'small', color: 'red' }}>This field is mandatory</p>
                         </div>
 
                         <div style={{ padding: '25px', borderBottom: '1px solid rgba(14,4,5,.2)' }}>
+                            <h3 className='MainCOLOR'>REVIEW YOUR DETAILS</h3>
                         </div>
 
                         <div style={{ padding: '25px' }}>
+                            <div>
+                                <button className='PostBtn' type='submit'>Post now</button>
+                            </div>
                         </div>
                     </form>
 

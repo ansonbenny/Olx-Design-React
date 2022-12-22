@@ -86,6 +86,18 @@
     margin-top: 10px;
 }
 
+.SellItemPage .sellCard .PostBtn{
+    color: #7f9799;
+    background: #d8dfe0;
+    width: 6em;
+    height: 3em;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+}
+
 @media only screen and (max-width: 1080px) {
     .SellItemPage .sellCard {
         margin-left: 10em;
@@ -112,6 +124,10 @@
 
     .SellItemPage .titleH4Sell {
         display: none;
+    }
+
+    .SellItemPage .sellCard .PostBtn{
+        width: 100%;
     }
 }
 
