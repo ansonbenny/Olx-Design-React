@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useContext } from 'react'
 import Footer from '../Components/Footer/Footer'
 import Header from '../Components/Header/Header'
@@ -7,12 +7,13 @@ import ContentControl from '../ContentControl'
 
 function Sell() {
     const { setpageName } = useContext(ContentControl)
+    useEffect(() => {
+        setpageName('Post your Ad')
+    }, [])
     return (
-        <div onLoad={()=>{
-            setpageName('Post your Ad')
-        }}>
+        <div>
             <Header SpecificDesk={true} SpecificMob={true} sellPage={true} />
-            <SellComponent/>
+            <SellComponent />
             <Footer copyOnly={true} />
         </div>
     )

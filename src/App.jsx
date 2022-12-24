@@ -7,6 +7,7 @@ import Error from './Pages/Error';
 import MyAds from './Pages/MyAds';
 import Chats from './Pages/Chats';
 import Sell from './Pages/Sell';
+import Item from './Pages/Item';
 
 function App() {
   const [showScrlUp, setScrlUp] = useState(false)
@@ -32,6 +33,7 @@ function App() {
           <Route path='/myads' element={<MyAds />} />
           <Route path='/chats' element={<Chats/>} />
           <Route path='/post/attributes' element={<Sell/>} />
+          <Route path='/item' element={<Item/>} />
           <Route path='*' element={<Error />} />
         </Routes>
       </ContentContronl.Provider>

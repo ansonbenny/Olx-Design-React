@@ -8,7 +8,7 @@ import MobHead from './MobHead'
 import DeskHead from './DeskHead'
 import DeskHeadSpeci from './DeskHeadSpeci'
 
-function Header({SpecificMob,SpecificDesk, sellPage}) {
+function Header({SpecificMob,SpecificDesk, sellPage,IsHideSeMob}) {
   
   const { clkdLogin, mobMenuAct } = useContext(ContentControl)
 
@@ -19,12 +19,11 @@ function Header({SpecificMob,SpecificDesk, sellPage}) {
       <div className='Header'>
         {SpecificDesk ? <DeskHeadSpeci sellPage={sellPage}/> : <DeskHead/>}
         
-        {SpecificMob ? <MobHeadSpeci sellPage={sellPage}/> : <MobHead/>}
+        {SpecificMob ? <MobHeadSpeci sellPage={sellPage}/> : <MobHead IsHideSeMob={IsHideSeMob}/>}
 
       </div>
-      <div className="topPaddMob"></div>
+      <div style={IsHideSeMob && {paddingTop: '3.2em'}} className="topPaddMob"></div>
       <div className="topPaddDesk"></div>
-
 
     </div>
   )

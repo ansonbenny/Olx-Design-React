@@ -32,12 +32,24 @@ body{
   font-weight: normal;
 }
 
+.roundBorder{
+  border-radius: 50%;
+}
+
 .fontSmall-14{
   font-size: 14px;
 }
 
 .colorGrey{
   color: gray;
+}
+
+.colorLightBlue{
+  color: #6c99ff;
+}
+
+.fontSmall{
+  font-size: small;
 }
 
 .sellMenu {

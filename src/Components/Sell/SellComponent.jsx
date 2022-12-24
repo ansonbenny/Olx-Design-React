@@ -1,9 +1,11 @@
 import React from 'react'
+import { useState } from 'react'
 import './SellComponent.css'
 
 function SellComponent() {
-
-    var imgLoop = [1, 2, 3, 4, 5, 6]
+    const [TitleLen,setTitleLen] = useState(0)
+    const [AdTitle,setAdTitle] = useState('')
+    var imgLoop = [1, 2, 3, 4, 5, 6,7,8,9,10,11,12]
     return (
         <div>
             <div className='SellItemPage'>
@@ -25,18 +27,20 @@ function SellComponent() {
                             <h3 className='MainCOLOR'>INCLUDE SOME DETAILS</h3>
                             <div>
                                 <div style={{ marginTop: '15px' }} className='InputDivs'>
-                                    <label>Brand *</label>
+                                    <label className='MainCOLOR'>Brand *</label>
                                     <br />
                                     <select className='BrandInput' name="" id="">
-                                        <option value=""></option>
-                                        <option value="">Apple</option>
+                                        <option></option>
+                                        <option>Apple</option>
                                     </select>
                                 </div>
 
                                 <div className='InputDivs'>
-                                    <label>Ad title *</label>
+                                    <label className='MainCOLOR'>Ad title *</label>
                                     <br />
-                                    <input type="text" className='inputSell' name="" id="" />
+                                    <input type="text" className='inputSell' onChange={(e)=>{
+                                        setAdTitle(e.nativeEvent.data)
+                                    }} name="" id="" />
 
                                     <div className='GridtwoMsg'>
                                         <div>
@@ -49,7 +53,7 @@ function SellComponent() {
                                 </div>
 
                                 <div className='InputDivs'>
-                                    <label>Description *</label>
+                                    <label className='MainCOLOR'>Description *</label>
                                     <br />
                                     <textarea style={{ height: '100px', paddingTop: '10px', resize: 'none' }} className='inputSell'></textarea>
 
@@ -88,14 +92,14 @@ function SellComponent() {
                                     imgLoop.map((obj, key) => {
                                         if (key === 0) {
                                             return (
-                                                <div key={key} className='imgSltCard'>
+                                                <div key={key} style={{cursor: 'pointer' }} className='imgSltCard'>
                                                     <h1 style={{ color: '#002f34' }}><i className="fa-solid fa-camera"></i></h1>
                                                     <h5 style={{ color: '#002f34', fontWeight: 'normal' }}>Add Photo</h5>
                                                 </div>
                                             )
                                         } else {
                                             return (
-                                                <div key={key} className='imgSltCard' style={{ borderColor: '#9dadb6', paddingTop: '30px', height: '70px' }}>
+                                                <div key={key} className='imgSltCard' style={{ borderColor: '#9dadb6', paddingTop: '30px', height: '70px',cursor: 'pointer' }}>
                                                     <h1 style={{ color: '#9dadb6' }}><i className="fa-solid fa-camera"></i></h1>
                                                 </div>
                                             )
@@ -120,11 +124,11 @@ function SellComponent() {
                                     </div>
                                 </div>
 
-                                <label>State *</label>
+                                <label className='MainCOLOR'>State *</label>
                                 <br />
                                 <select className='BrandInput' name="" id="">
-                                    <option value=""></option>
-                                    <option value="">Apple</option>
+                                    <option ></option>
+                                    <option >Apple</option>
                                 </select>
                             </div>
 
@@ -133,6 +137,24 @@ function SellComponent() {
 
                         <div style={{ padding: '25px', borderBottom: '1px solid rgba(14,4,5,.2)' }}>
                             <h3 className='MainCOLOR'>REVIEW YOUR DETAILS</h3>
+                            <div style={{ marginTop: '20px' }} className='InputDivs'>
+                                <div style={{ display: 'grid', gridTemplateColumns: '110px auto' }}>
+
+                                    <div>
+                                        <div className='roundBorder' style={{ background: '#A020F0', width: '100px', height: '100px' }}>
+                                            <h2 style={{ color: 'white', textAlign: 'center', fontSize: '50px', paddingTop: '20px' }}>A</h2>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label className='MainCOLOR'>Name</label>
+                                        <br />
+                                        <input type="text" value='ANSON BENNY' style={{ width: '100%' }} className='inputSell' name="" id="" />
+                                    </div>
+
+                                </div>
+                                <h4 style={{ paddingTop: '30px', paddingBottom: '40px' }} className='MainCOLOR fontNormal'>Your phone number <span style={{ float: 'right' }}>+917561854559</span></h4>
+                            </div>
                         </div>
 
                         <div style={{ padding: '25px' }}>

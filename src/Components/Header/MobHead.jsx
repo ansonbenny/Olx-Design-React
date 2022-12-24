@@ -1,9 +1,9 @@
-import React,{useContext} from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import OlxLogo from '../../assets/OlxLogo'
 import ContentControl from '../../ContentControl'
 
-function MobHead() {
+function MobHead({ IsHideSeMob }) {
     const { setmobMenuAct } = useContext(ContentControl)
     return (
         <div className="headerMob">
@@ -21,16 +21,18 @@ function MobHead() {
                     <h5 className='mobLocHead'>Kerala <i className="fa-solid fa-location-dot"></i></h5>
                 </div>
 
-                <div>
-
-                </div>
             </div>
-
-            <div className='mobSearchHead'>
-                <button> <span><i className="fa-solid fa-magnifying-glass"></i></span>&nbsp;&nbsp;Find Cars, Mobiles and more ...</button>
-            </div>
+            {IsHideSeMob ? null : <MobileSearch />}
         </div>
     )
 }
 
 export default MobHead
+
+function MobileSearch() {
+    return (
+        <div className='mobSearchHead'>
+            <button> <span><i className="fa-solid fa-magnifying-glass"></i></span>&nbsp;&nbsp;Find Cars, Mobiles and more ...</button>
+        </div>
+    )
+}

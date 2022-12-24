@@ -1,0 +1,188 @@
+.ItemContainer{
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 10px;
+}
+
+.ItemImgPriGrid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.ItemImgPriGrid .ItemImgCard{
+    border: 1px solid black;
+    background: black;
+    border-radius: 3px;
+    width: 50em;
+    height: 30em;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.ItemImgPriGrid .ItemImgCard img{
+    width: auto;
+    max-width: 500px;
+    height: 100%;
+}
+
+.ItemImgPriGrid .itemDesDeta{
+    margin-right: 30px;
+    margin-top: 3px;
+}
+
+.ItemContainer .ItemMainCard{
+    border-radius: 3px;
+    border: 1px solid rgba(14,4,5,.2);
+    margin-bottom: 8px;
+    padding: 20px;
+}
+
+.ItemImgPriGrid .ChatWiSelDivDesk{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ItemImgPriGrid .ChatWiSelDivDesk button{
+    width: 100%;
+    background-color: white;
+    border: 2px solid #002f34;
+    height: 3.5em;
+    border-radius: 3px;
+    color: #002f34;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.ItemImgPriGrid .ChatWiSelDivDesk button:hover{
+    border: 5px solid #002f34;
+}
+
+.ItemImgPriGrid .ItemDetails{
+    border-bottom: 1px solid rgba(14,4,5,.2);
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.ItemImgPriGrid .ItemDescriptionDiv{
+    padding-top: 1em;
+}
+
+.ItemImgPriGrid .PriceCardItemMob{
+    display: none;
+}
+
+.ItemImgPriGrid .PriceCardItemDesk{
+    display: block;
+}
+
+.ItemImgPriGrid .AdIdReportMob{
+    display: none;
+}
+
+.ItemImgPriGrid .AdIdReportDesk{
+    display: block;
+}
+
+.ItemMobBottmBtns {
+    display: none;
+}
+
+@media only screen and (max-width: 1169px){
+    .ItemImgPriGrid {
+        grid-template-columns: auto;
+    }
+
+    .ItemImgPriGrid .ItemImgCard{
+        margin: 0;
+        width: 100%;
+    }
+
+    .ItemImgPriGrid .itemDesDeta{
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
+    .ItemImgPriGrid .PriceCardItemMob{
+        display: block;
+        margin-top: 3px;
+    }
+
+    .ItemImgPriGrid .PriceCardItemDesk{
+        display: none;
+    }
+
+    .ItemImgPriGrid .AdIdReportMob{
+        display: block;
+    }
+
+    .ItemImgPriGrid .AdIdReportDesk{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .ItemContainer{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .ItemImgPriGrid .ChatWiSelDivDesk{
+        display: none;
+    }
+
+    .ItemImgPriGrid .sellerPhone{
+        display: none;
+    }
+
+    .ItemImgPriGrid .ItemImgCard img{
+        width: auto;
+        max-width: 50%;
+        height: 100%;
+    }
+
+    .ItemImgPriGrid .ItemImgCard{
+        width: auto;
+        height: 13em;
+    }
+
+    .ItemMobBottmBtns {
+        display: block;
+        height: 70px;
+        background: white;
+        position: fixed;
+        z-index: 10000;
+        width: 100%;
+        bottom: 0;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 6px 9px;
+    }
+
+    .ItemMobBottmBtns .ItemBottmDiv{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .ItemMobBottmBtns .BottmBtns{
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 3px;
+        background: #002f34;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .ItemMobBottmBtns .BottmBtns:hover{
+        border: 5px solid #002f34;
+        background: white;
+        color: #002f34;
+    }
+
+    .ItemMobBottmBtns .BottmBtnRt{
+        margin-left: 5px;
+    }
+}
