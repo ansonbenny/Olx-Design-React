@@ -282,6 +282,7 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         color: #002f34;
+        max-width: 400px;
     }
 
     .AdsRow .AdsCardMob .gridTwoViewLike {
@@ -326,6 +327,10 @@
         border-bottom: 1px solid rgba(149, 157, 165, 0.2);
     }
 
+    .AdsRow .AdsCardMob{
+        width: auto;
+    }
+
     .MyAdsFilterAreaDesk {
         display: none;
     }
@@ -341,5 +346,23 @@
 
     .MenuSubCardMob{
         margin-right: -16px;
+    }
+
+    .AdsRow .AdsCardMob .ImageAndTitleMob .adsTitLenMy {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #002f34;
+        max-width: 250px;
+    }
+}
+
+@media only screen and (max-width: 474px) {
+    .AdsRow .AdsCardMob .ImageAndTitleMob .adsTitLenMy {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #002f34;
+        max-width: 150px;
     }
 }

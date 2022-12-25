@@ -83,7 +83,7 @@ function MyAdsCard({ position }) {
                             </div>
                             <div>
                                 <div>
-                                    <h5 className='adsTitLenMy'>I will be develop and design your website</h5>
+                                    <h5 className='adsTitLenMy'>I will be develop and design your website Sample Sample Sample Sample Sample</h5>
                                     <h5 style={{ paddingTop: '5px', fontWeight: 'normal', color: '#002f34' }}>₹0</h5>
                                 </div>
                             </div>
