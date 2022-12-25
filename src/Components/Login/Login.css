@@ -24,7 +24,7 @@
     margin: 2em;
     border: 2px solid white;
     background: white;
-    height: 570px;
+    height: auto;
     border-radius: 5px;
     padding: 1em;
 }
@@ -35,10 +35,7 @@
 }
 
 .LoginMainDiv .LoginGrid .lgnCntntBottum{
-    position: absolute;
-    bottom: 2em;
-    left: 37%;
-    right: 37%;
+    padding-top: 5em;
 }
 
 @media only screen and (max-width: 959px){
@@ -69,6 +66,7 @@
         left: 0;
         width: 100%;
         text-align: center;
+        padding-top: 0em;
     }
 }
 
