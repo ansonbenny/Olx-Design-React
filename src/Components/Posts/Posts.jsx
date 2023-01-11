@@ -68,7 +68,7 @@ function Posts() {
                                         return (
                                             <div className='cardpadSe' key={key}>
                                                 <div className='cardSe'>
-                                                    <div className='floatRight'>
+                                                    <div className='HeartRight'>
                                                         <Heart />
                                                     </div>
                                                     <div className='cardImgDiv'>
@@ -106,7 +106,7 @@ function Posts() {
                                 Items.map((obj, key) => {
                                     return (
                                         <div className='card' key={key}>
-                                            <div className='floatRight'>
+                                            <div className='HeartRight'>
                                                 <Heart />
                                             </div>
                                             <div className='cardImgDiv'>

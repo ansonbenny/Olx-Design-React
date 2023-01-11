@@ -34,6 +34,7 @@ Responsive Post
     right: 0;
     margin-right: 70px;
     height: 50px;
+    z-index: 1000;
 }
 
 .PostBasedScrlLeft {
@@ -42,6 +43,7 @@ Responsive Post
     left: 0;
     margin-left: 70px;
     height: 50px;
+    z-index: 1000;
 }
 
 .PostBasedScrlLeft button {
@@ -100,7 +102,8 @@ Responsive Post
     background: white;
     margin-right: 15px;
     margin-top: 15px;
-    height: 17em;
+    height: 15em;
+    position: relative;
 }
 
 .cardSubText {
@@ -128,9 +131,11 @@ Responsive Post
     max-width: 18.5em;
     width: auto;
     padding: 10px;
+    padding-top: 3px;
     background: white;
-    height: 17em;
+    height: 15em;
     display: inline-block;
+    position: relative;
 }
 
 .cardImgDiv {
@@ -168,6 +173,11 @@ Responsive Post
 
 .floatRight {
     margin-left: 15em;
+}
+
+.HeartRight{
+    position: absolute;
+    right: 5px;
 }
 
 .cardSe h5 {
@@ -619,7 +629,7 @@ Responsive Post
 @media only screen and (max-width: 1086px) {
     .cardSe {
         max-width: 14em;
-        max-height: 14em;
+        max-height: 12em;
     }
 
     .cardSe h5 {
@@ -651,7 +661,7 @@ Responsive Post
         padding: 10px;
         background: white;
         margin: 5px;
-        height: 14em;
+        height: 12em;
     }
 
     .cardImgDiv {
@@ -731,7 +741,7 @@ Responsive Post
 @media only screen and (max-width: 1036px) {
     .cardSe {
         max-width: 13em;
-        max-height: 14em;
+        max-height: 12em;
     }
 
     .cardSe h5 {
@@ -760,7 +770,7 @@ Responsive Post
         border-radius: 5px;
         max-width: 13em;
         width: auto;
-        height: 14em;
+        height: 12em;
         padding: 10px;
         background: white;
         margin: 5px;
@@ -789,7 +799,7 @@ Responsive Post
 @media only screen and (max-width: 1005px) {
     .cardSe {
         max-width: 12.5em;
-        max-height: 14em;
+        max-height: 12em;
     }
 
     .cardSe h5 {
@@ -821,7 +831,7 @@ Responsive Post
         padding: 10px;
         background: white;
         margin: 5px;
-        height: 14em;
+        height: 12em;
     }
 
     .cardImgDiv {
@@ -1411,7 +1421,7 @@ Responsive Post
 
     .card {
         width: 80%;
-        height: 12em;
+        height: 11em;
     }
 
     .postsHome {
@@ -1472,7 +1482,7 @@ Responsive Post
     }
 
     .cardpadSe .cardSe {
-        height: 12em;
+        height: 11em;
         width: 8.8em;
     }
 }
