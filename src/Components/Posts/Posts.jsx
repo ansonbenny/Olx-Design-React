@@ -16,7 +16,38 @@ function Posts() {
         }
     }
 
-    var loop = [1, 2, 3, 4, 5]
+    var Items = [
+        {
+            name : 'Yamaha R15 V3',
+            img : '/Images/Product/R15V3.jpg',
+            price : 110000,
+            location: 'Kanwar Singh Nagar, Delhi, Delhi'
+        },
+        {
+            name : 'Yamaha / R15 V-1 , 2016 model',
+            img : '/Images/Product/r15v1.webp',
+            price : 73000,
+            location: 'Rajouri Garden, Delhi, Delhi'
+        },
+        {
+            name : 'TVS Ntorq 2018 model',
+            img : '/Images/Product/tvs.webp',
+            price : 45000,
+            location: 'Inderpuri, Delhi, Delhi'
+        },
+        {
+            name : 'Yamaha Ray zr street rally 125 cc',
+            img : '/Images/Product/zr.webp',
+            price : 62500,
+            location: 'Sector 102, Noida, Uttar Pradesh'
+        },
+        {
+            name : 'YAMAHA CYGNUS RAY ZR cc-125, (2022 ) Model',
+            img : '/Images/Product/zr2.webp',
+            price : 95000,
+            location: 'Patparganj, Delhi, Delhi'
+        }
+    ]
     return (
         <div>
             <div className='postsHome'>
@@ -33,7 +64,7 @@ function Posts() {
                             <div>
 
                                 {
-                                    loop.map((obj, key) => {
+                                    Items.map((obj, key) => {
                                         return (
                                             <div className='cardpadSe' key={key}>
                                                 <div className='cardSe'>
@@ -41,16 +72,16 @@ function Posts() {
                                                         <Heart />
                                                     </div>
                                                     <div className='cardImgDiv'>
-                                                        <img src="/Images/R15V3.jpg" alt="" />
+                                                        <img src={obj.img} alt="" />
                                                     </div>
                                                     <div className='pad-5'>
-                                                        <h3 className='cardAmt'>₹ 21,000</h3>
+                                                        <h3 className='cardAmt'>₹ {obj.price}</h3>
                                                     </div>
                                                     <div className='pad-5'>
-                                                        <h5 className='cardSubTextH4'>aaaaaaaaaaaaaaaaaaaaaaaaa</h5>
+                                                        <h5 className='cardSubTextH4'>{obj.name}</h5>
                                                     </div>
                                                     <div className='pad-5'>
-                                                        <h5 className='cardSubText'>aaaaaaaaaaaaaaaaaaaaaaaaa</h5>
+                                                        <h5 className='cardSubText'>{obj.location}</h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -72,19 +103,19 @@ function Posts() {
                         <div className='PostBasedRec'>
 
                             {
-                                loop.map((obj, key) => {
+                                Items.map((obj, key) => {
                                     return (
                                         <div className='card' key={key}>
                                             <div className='floatRight'>
                                                 <Heart />
                                             </div>
                                             <div className='cardImgDiv'>
-                                                <img src="/Images/R15V3.jpg" alt="" />
+                                                <img src={obj.img} alt="" />
                                             </div>
                                             <div className='pad-5'>
-                                                <h3 className='cardAmt'>₹ 21,000</h3>
-                                                <h5 className='cardSubTextH4'>aaaaaaaaaaaaaaaaaaaaaaaaa</h5>
-                                                <h5 className='cardSubText'>aaaaaaaaaaaaaaaaaaaaaaaaa</h5>
+                                                <h3 className='cardAmt'>₹ {obj.price}</h3>
+                                                <h5 className='cardSubTextH4'>{obj.name}</h5>
+                                                <h5 className='cardSubText'>{obj.location}</h5>
                                             </div>
                                         </div>
                                     )

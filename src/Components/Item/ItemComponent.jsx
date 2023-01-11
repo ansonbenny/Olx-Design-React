@@ -9,7 +9,7 @@ function ItemComponent() {
 
           <div>
             <div className='ItemImgCard'>
-              <img src="/Images/Product/product.webp" alt="" />
+              <img src="/Images/Product/iphone.webp" alt="" />
             </div>
 
             <div className='PriceCardItemMob'>

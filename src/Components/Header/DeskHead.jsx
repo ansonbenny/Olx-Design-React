@@ -9,7 +9,7 @@ import Arrow from '../../assets/Arrow'
 import ContentControl from '../../ContentControl'
 
 function DeskHead() {
-    const [location, setLocation] = useState('')
+    const [location, setLocation] = useState('Delhi')
     const [search, setSearch] = useState('')
 
     const { setClkdLogin, setmobMenuAct } = useContext(ContentControl)

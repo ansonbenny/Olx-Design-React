@@ -17,14 +17,14 @@ function MyAdsCard({ position }) {
 
                             <div className='flex'>
                                 <div className='ProImageAds'>
-                                    <img src="/Images/Product/preview.jpg" alt="" />
+                                    <img src="/Images/Product/iphone.webp" alt="" />
                                 </div>
                                 <div className='flex'>
                                     <div>
-                                        <h5 className='adsTitLenMy'>I will be develop and design your website</h5>
+                                        <h5 className='adsTitLenMy'>iphone 5s 16gb box packed handset with all accesories and box warranty</h5>
                                     </div>
                                     <div>
-                                        <h5 style={{ paddingTop: '35px', fontWeight: 'normal', color: '#002f34' }}>₹0</h5>
+                                        <h5 style={{ paddingTop: '35px', fontWeight: 'normal', color: '#002f34' }}>₹10000</h5>
                                     </div>
                                 </div>
                             </div>
@@ -79,12 +79,12 @@ function MyAdsCard({ position }) {
                     <div className='ImageAndTitleMob'>
                         <div className='flex'>
                             <div className='ProImageAds'>
-                                <img src="/Images/Product/preview.jpg" alt="" />
+                                <img src="/Images/Product/iphone.webp" alt="" />
                             </div>
                             <div>
                                 <div>
-                                    <h5 className='adsTitLenMy'>I will be develop and design your website Sample Sample Sample Sample Sample</h5>
-                                    <h5 style={{ paddingTop: '5px', fontWeight: 'normal', color: '#002f34' }}>₹0</h5>
+                                    <h5 className='adsTitLenMy'>iphone 5s 16gb box packed handset with all accesories and box warranty</h5>
+                                    <h5 style={{ paddingTop: '5px', fontWeight: 'normal', color: '#002f34' }}>₹10000</h5>
                                 </div>
                             </div>
                         </div>
