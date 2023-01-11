@@ -24,25 +24,25 @@ function Posts() {
             location: 'Kanwar Singh Nagar, Delhi, Delhi'
         },
         {
-            name : 'Yamaha / R15 V-1 , 2016 model',
+            name : 'Yamaha / R15 V-1 ',
             img : '/Images/Product/r15v1.webp',
             price : 73000,
             location: 'Rajouri Garden, Delhi, Delhi'
         },
         {
-            name : 'TVS Ntorq 2018 model',
+            name : 'TVS Ntorq 2018',
             img : '/Images/Product/tvs.webp',
             price : 45000,
             location: 'Inderpuri, Delhi, Delhi'
         },
         {
-            name : 'Yamaha Ray zr street rally 125 cc',
+            name : 'Yamaha Ray zr street',
             img : '/Images/Product/zr.webp',
             price : 62500,
             location: 'Sector 102, Noida, Uttar Pradesh'
         },
         {
-            name : 'YAMAHA CYGNUS RAY ZR cc-125, (2022 ) Model',
+            name : 'YAMAHA CYGNUS RAY ZR cc-125',
             img : '/Images/Product/zr2.webp',
             price : 95000,
             location: 'Patparganj, Delhi, Delhi'
