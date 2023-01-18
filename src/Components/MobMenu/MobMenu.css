@@ -70,11 +70,22 @@
         padding-top: 5px;
     }
 
+    .MobileMenu .MobMenuRows .accDetails .viewEdit{
+        color: #002f34;
+        font-size: small;
+    }
+
     .MobileMenu .MOBmenuLinks {
-        padding-top: 5px;
         padding-bottom: 15px;
         color: #002f34;
         padding-left: 5px;
+    }
+
+    .MobileMenu .MOBmenuLinks2nd{
+        padding-bottom: 15px;
+        color: #002f34;
+        padding-left: 5px;
+        padding-top: 2px;
     }
 
     .MobileMenu .MobMenuRowLast {

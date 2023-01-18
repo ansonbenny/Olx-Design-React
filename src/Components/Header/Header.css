@@ -101,6 +101,11 @@
     background-color: white;
 }
 
+.searchInDiv2nd {
+    width: 400px;
+    background-color: white;
+}
+
 .searchInput {
     border: 2px solid #002f34;
     border-top-left-radius: 3px;
@@ -122,9 +127,19 @@
     grid-template-columns: auto auto auto;
 }
 
+.accDivHeaderLoged {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
 .headLangu {
     padding-left: 25px;
     padding-top: 18px;
+}
+
+.headLangu2nd {
+    padding-left: 25px;
+    padding-top: 16px;
 }
 
 .headLangu h4 {
@@ -156,15 +171,20 @@
     padding-left: 3em;
 }
 
-.headerMob{
+.headerSell2nd {
+    padding-top: 3px;
+    padding-left: 1em;
+}
+
+.headerMob {
     display: none;
 }
 
-.SpecificHeadMob{
+.SpecificHeadMob {
     display: none;
 }
 
-.SpecificHeadDesk{
+.SpecificHeadDesk {
     display: block;
     background: whitesmoke;
     padding-top: 23px;
@@ -172,17 +192,17 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.SpecificHeadDesk .backBtn{
+.SpecificHeadDesk .backBtn {
     padding-right: 25px;
     padding-left: 15px;
 }
 
-.topPaddDesk{
+.topPaddDesk {
     display: block;
     padding-top: 4.4em;
 }
 
-.topPaddMob{
+.topPaddMob {
     display: none;
 }
 
@@ -195,6 +215,17 @@
     .searchInDiv {
         width: 380px;
     }
+
+    .searchInDiv2nd {
+        width: 330px;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+
+    .searchInDiv2nd {
+        width: 300px;
+    }
 }
 
 @media only screen and (max-width: 1115px) {
@@ -206,6 +237,11 @@
     .searchInDiv {
         width: auto;
         max-width: 350px;
+    }
+
+    .searchInDiv2nd {
+        width: auto;
+        max-width: 300px;
     }
 
     .searchIcon {
@@ -222,29 +258,29 @@
         display: none;
     }
 
-    .topPaddDesk{
+    .topPaddDesk {
         display: none;
     }
 
-    .topPaddMob{
+    .topPaddMob {
         display: block;
         padding-top: 6.2em;
     }
 
-    .headerMob{
+    .headerMob {
         display: block;
         background-color: white;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
-    .headerMob .mainHeadMob{
+    .headerMob .mainHeadMob {
         display: grid;
         grid-template-columns: auto auto;
         padding-left: 15px;
         padding-right: 15px;
     }
 
-    .headerMob .mobLocHead{
+    .headerMob .mobLocHead {
         padding-top: 15px;
         font-weight: bold;
         font-size: medium;
@@ -252,21 +288,21 @@
         float: right;
     }
 
-    .headerMob .mobLocHeadDiv{
+    .headerMob .mobLocHeadDiv {
         float: right;
     }
 
-    .headerMob .headerMobMenubar{
+    .headerMob .headerMobMenubar {
         padding-top: 15px;
         padding-right: 15px;
     }
 
-    .headerMob .headerMobMenubar button{
+    .headerMob .headerMobMenubar button {
         background: none;
         border: none;
     }
 
-    .headerMob .headerMobMenubar i{
+    .headerMob .headerMobMenubar i {
         color: #002f34;
     }
 
@@ -293,7 +329,7 @@
         padding-bottom: 8px;
     }
 
-    .SpecificHeadMob{
+    .SpecificHeadMob {
         display: block;
         background: whitesmoke;
         padding-top: 23px;
@@ -301,12 +337,12 @@
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
 
-    .SpecificHeadMob .backBtn{
+    .SpecificHeadMob .backBtn {
         padding-right: 25px;
         padding-left: 15px;
     }
 
-    .SpecificHeadDesk{
+    .SpecificHeadDesk {
         display: none;
     }
 }

@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import Arrow from '../../assets/Arrow'
 import Heart from '../../assets/Heart'
 import LeftBtn from './leftBtn'
+import { Link } from 'react-router-dom'
 import './Posts.css'
 
 function Posts() {
@@ -9,7 +10,7 @@ function Posts() {
     const ref = useRef(null);
     function handleClick(scrl) {
         ref.current.scrollLeft += scrl
-        if (ref.current.scrollLeft == 0) {
+        if (ref.current.scrollLeft === 0) {
             setLeft(false)
         } else {
             setLeft(true)
@@ -18,33 +19,33 @@ function Posts() {
 
     var Items = [
         {
-            name : 'Yamaha R15 V3',
-            img : '/Images/Product/R15V3.jpg',
-            price : 110000,
+            name: 'Yamaha R15 V3',
+            img: '/Images/Product/R15V3.jpg',
+            price: 110000,
             location: 'Kanwar Singh Nagar, Delhi, Delhi'
         },
         {
-            name : 'Yamaha / R15 V-1 ',
-            img : '/Images/Product/r15v1.webp',
-            price : 73000,
+            name: 'Yamaha / R15 V-1 ',
+            img: '/Images/Product/r15v1.webp',
+            price: 73000,
             location: 'Rajouri Garden, Delhi, Delhi'
         },
         {
-            name : 'TVS Ntorq 2018',
-            img : '/Images/Product/tvs.webp',
-            price : 45000,
+            name: 'TVS Ntorq 2018',
+            img: '/Images/Product/tvs.webp',
+            price: 45000,
             location: 'Inderpuri, Delhi, Delhi'
         },
         {
-            name : 'Yamaha Ray zr street',
-            img : '/Images/Product/zr.webp',
-            price : 62500,
+            name: 'Yamaha Ray zr street',
+            img: '/Images/Product/zr.webp',
+            price: 62500,
             location: 'Sector 102, Noida, Uttar Pradesh'
         },
         {
-            name : 'YAMAHA CYGNUS RAY ZR cc-125',
-            img : '/Images/Product/zr2.webp',
-            price : 95000,
+            name: 'YAMAHA CYGNUS RAY ZR cc-125',
+            img: '/Images/Product/zr2.webp',
+            price: 95000,
             location: 'Patparganj, Delhi, Delhi'
         }
     ]
@@ -66,25 +67,27 @@ function Posts() {
                                 {
                                     Items.map((obj, key) => {
                                         return (
-                                            <div className='cardpadSe' key={key}>
-                                                <div className='cardSe'>
-                                                    <div className='HeartRight'>
-                                                        <Heart />
-                                                    </div>
-                                                    <div className='cardImgDiv'>
-                                                        <img src={obj.img} alt="" />
-                                                    </div>
-                                                    <div className='pad-5'>
-                                                        <h3 className='cardAmt'>₹ {obj.price}</h3>
-                                                    </div>
-                                                    <div className='pad-5'>
-                                                        <h5 className='cardSubTextH4'>{obj.name}</h5>
-                                                    </div>
-                                                    <div className='pad-5'>
-                                                        <h5 className='cardSubText'>{obj.location}</h5>
+                                            <Link to={'/item'} className="aTagUnderLineRm">
+                                                <div className='cardpadSe' key={key}>
+                                                    <div className='cardSe'>
+                                                        <div className='HeartRight'>
+                                                            <Heart />
+                                                        </div>
+                                                        <div className='cardImgDiv'>
+                                                            <img src={obj.img} alt="" />
+                                                        </div>
+                                                        <div className='pad-5'>
+                                                            <h3 className='cardAmt'>₹ {obj.price}</h3>
+                                                        </div>
+                                                        <div className='pad-5'>
+                                                            <h5 className='cardSubTextH4'>{obj.name}</h5>
+                                                        </div>
+                                                        <div className='pad-5'>
+                                                            <h5 className='cardSubText'>{obj.location}</h5>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </Link>
                                         )
                                     })
                                 }
@@ -105,19 +108,21 @@ function Posts() {
                             {
                                 Items.map((obj, key) => {
                                     return (
-                                        <div className='card' key={key}>
-                                            <div className='HeartRight'>
-                                                <Heart />
+                                        <Link to={'/item'} className="aTagUnderLineRm">
+                                            <div className='card' key={key}>
+                                                <div className='HeartRight'>
+                                                    <Heart />
+                                                </div>
+                                                <div className='cardImgDiv'>
+                                                    <img src={obj.img} alt="" />
+                                                </div>
+                                                <div className='pad-5'>
+                                                    <h3 className='cardAmt'>₹ {obj.price}</h3>
+                                                    <h5 className='cardSubTextH4'>{obj.name}</h5>
+                                                    <h5 className='cardSubText'>{obj.location}</h5>
+                                                </div>
                                             </div>
-                                            <div className='cardImgDiv'>
-                                                <img src={obj.img} alt="" />
-                                            </div>
-                                            <div className='pad-5'>
-                                                <h3 className='cardAmt'>₹ {obj.price}</h3>
-                                                <h5 className='cardSubTextH4'>{obj.name}</h5>
-                                                <h5 className='cardSubText'>{obj.location}</h5>
-                                            </div>
-                                        </div>
+                                        </Link>
                                     )
                                 })
                             }
